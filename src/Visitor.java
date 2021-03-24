@@ -14,15 +14,19 @@ public class Visitor {
         this.danceStyle = danceStyle;
     }
 
-    public String  activity(Visitor visitor) {
-        String activity;
-        if (Music.playingMusic().equals(visitor.danceStyle)) {
-            activity = "Dancing!";
-        }
-        else {
-            activity = "Going for drink!";
-        }
-        return activity;
+//    public String activity(String music) {
+//        String activity;
+//        if (music.equals(danceStyle)) {
+//            activity = "Dancing!";
+//        }
+//        else {
+//            activity = "Going for drink!";
+//        }
+//        return activity;
+//    }
+
+    public boolean activity(String music) {
+        return music.equals(danceStyle);
     }
 
     public static Visitor visitorsGenerator() {
