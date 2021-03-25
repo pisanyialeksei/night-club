@@ -1,29 +1,17 @@
-import java.util.ArrayList;
 import java.util.Random;
 
 public class Visitor {
 
-    public String gender;
-    public String danceStyle;
+    private String gender;
+    private String danceStyle;
 
-    private static String[] genders = { "male", "female"};
-    private static String[] danceStyles = { "hip-hop", "electro", "pop"};
+    private static final String[] genders = { "male", "female"};
+    private static final String[] danceStyles = { "hip-hop", "electro", "pop"};
 
-    public Visitor(String gender, String danceStyle) {
+    private Visitor(String gender, String danceStyle) {
         this.gender = gender;
         this.danceStyle = danceStyle;
     }
-
-//    public String activity(String music) {
-//        String activity;
-//        if (music.equals(danceStyle)) {
-//            activity = "Dancing!";
-//        }
-//        else {
-//            activity = "Going for drink!";
-//        }
-//        return activity;
-//    }
 
     public boolean activity(String music) {
         return music.equals(danceStyle);

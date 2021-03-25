@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class Music {
 
-    private static String[] musicStyle = { "hip-hop", "electro", "pop" };
+    private static final String[] musicStyle = { "hip-hop", "electro", "pop" };
 
     public static String playingMusic() {
         Random random = new Random();
