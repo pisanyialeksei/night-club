@@ -10,8 +10,4 @@ public class Music {
         System.out.println("\nNow playing: " + musicStyle[index]);
         return musicStyle[index];
     }
-
-    public static void main(String[] args) {
-
-    }
 }

@@ -47,17 +47,4 @@ public class Visitor {
     public static String getValue(Visitor visitor) {
         return visitor.toString();
     }
-
-    /* for test */
-    public static void main(String[] args) {
-        ArrayList<Visitor> club = new ArrayList<>();
-
-        for (int i = 0; i < 6; i++) {
-            club.add(visitorsGenerator());
-        }
-
-        for (Visitor visitor : club) {
-            System.out.println(getValue(visitor));
-        }
-    }
 }
